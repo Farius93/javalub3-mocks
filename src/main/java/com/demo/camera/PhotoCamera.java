@@ -1,9 +1,18 @@
 package com.demo.camera;
 
-public class PhotoCamera {
+import java.awt.*;
+
+public class PhotoCamera{
+    private boolean isOn = false;
+
+    public PhotoCamera(boolean isOn) {
+        this.isOn = isOn;
+    }
 
     public void turnOn() {
-        // not implemented
+        SensorTest st = new SensorTest();
+
+
     }
 
     public void turnOff() {

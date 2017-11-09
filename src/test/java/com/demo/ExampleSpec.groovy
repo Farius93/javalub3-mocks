@@ -1,5 +1,6 @@
 package com.demo
 
+import com.demo.camera.PhotoCamera
 import spock.lang.Specification
 
 class ExampleSpec extends Specification {
@@ -18,6 +19,7 @@ class ExampleSpec extends Specification {
 
     // These classes are the implementation - here they are in the same file just for convenience
     // Put your implementation code under src/main/java
+
     class MyClient {
 
         private final Server server;

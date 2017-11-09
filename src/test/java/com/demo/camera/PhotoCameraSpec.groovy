@@ -9,4 +9,16 @@ class PhotoCameraSpec extends Specification {
 
     }
 
+    def "Check if camera is turn on"() {
+        given:
+        PhotoCamera photoCamera = Mock(PhotoCamera)
+        ImageSensor is = Mock(ImageSensor)
+
+        when:
+        photoCamera.turnOn()
+
+        then:
+        1 * is.turnOn()
+    }
+
 }
